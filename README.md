@@ -34,3 +34,17 @@ DNAC_USER= os.getenv("DNAC_USER") or "devnetuser"
 DNAC_PORT=os.getenv("DNAC_PORT") or 8080
 DNAC_PASSWORD= os.getenv("DNAC_PASSWORD") or "Cisco123!"
 ```
+
+## dump_power_supply_serial
+This script will trigger a pre-check on a given device.
+
+### Example
+```
+$ ./dump_power_supply_serial.py 
+DeviceIP,Hostname,PS1,PS2
+192.168.14.16,2960x-auckland,DCB1935607B
+10.10.3.122,9k-l3,DCA2221G76U
+192.168.200.232,encs-9k,ART2202F2NU,ART2202F8XJ
+10.10.100.120,perth-9k,LIT22112YS7
+10.10.9.4,perth-9k-edge,LIT220696DM
+```
